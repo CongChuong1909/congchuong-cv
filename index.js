@@ -1,12 +1,13 @@
 
 
-///loader
-
 
 const loader = document.querySelector("#preloader");
-window.addEventListener("load", function(){
+document.addEventListener("DOMContentLoaded", function(){
     loader.style.display = 'none';
 })
+
+
+
 ///slick slider
 $(document).ready(function(){
     $('.testimonials').slick({
@@ -37,6 +38,7 @@ setInterval(textLoad, 15000);
 
 ///sidebar
 
+
 const about = document.querySelector("#about");
 const resume = document.querySelector("#resume");
 const project = document.querySelector("#project");
@@ -49,24 +51,40 @@ const contactLink = document.querySelector("#contactlink");
 
 const data = [about, resume, project, contact]
 const dataLink = [aboutLink, resumeLink, projectLink, contactLink]
-dataLink.map((item, index)=>{
-    item.addEventListener('click', function(){
-        data.map((a, i)=>{
-            if(i !== index)
-            {
-                console.log(i);
-                a.classList.add('lg:hidden', 'fadeOutLeft');
-                a.classList.remove('fadeInLeft');
-                a.classList.remove('lg:active');
+window.addEventListener('resize', function(event){
+    handleViewAnimation();
+  });
+  handleViewAnimation();
+function handleViewAnimation() {
+    var screenWidth = window.innerWidth;
+    if(screenWidth >= 960){
+        dataLink.map((item, index)=>{
+            item.addEventListener('click', function(){
+                data.map((a, i)=>{
+                    if(i !== index)
+                    {
+                        a.classList.add('lg:hidden', 'lg:fadeOutLeft');
+                        a.classList.remove('lg:fadeInLeft');
+                        a.classList.remove('lg:active');
+                        
+                    }
+                })
+                data[index].classList.add('lg:active', 'lg:fadeInLeft');
+                data[index].classList.remove('lg:fadeOutLeft');
+                data[index].classList.remove('lg:hidden');
                 
-            }
+            })
         })
-        data[index].classList.add('lg:active', 'fadeInLeft');
-        data[index].classList.remove('fadeOutLeft');
-        data[index].classList.remove('lg:hidden');
-        
-    })
-})
+    }
+    
+  }
+  
+
+// if (screenWidth >= 960) {
+
+
+
+// }
 
 ///popup project
 
@@ -77,7 +95,6 @@ const nameProject = document.querySelector('.image-name');
 const imageProject = document.querySelector(".large-image");
 const layoutProject = document.querySelector(".layout_project");
 for (i = 0; i < elementProject.length; i++) {
-    console.log(elementProject[i]);
     (function(i) {
      elementProject[i].addEventListener('click', function() {
         let name =elementProject[i].getAttribute('name');

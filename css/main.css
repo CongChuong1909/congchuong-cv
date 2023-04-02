@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 ::selection {
     background: #1c5213; 
     color:#fff;
@@ -281,7 +283,7 @@
     visibility: hidden;
     z-index: 9;
 }
-.fadeOutLeft {
+.lg\:fadeOutLeft {
     -webkit-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft;
 }
@@ -290,14 +292,11 @@
     visibility: visible;
     z-index: 9;
 }
-  .fadeInLeft {
+  .lg\:fadeInLeft {
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
     }
-    .fadeOutLeft {
-        -webkit-animation-name: fadeOutLeft;
-        animation-name: fadeOutLeft;
-    }
+
   .lg\:animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
