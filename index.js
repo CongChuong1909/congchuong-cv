@@ -1,4 +1,12 @@
 
+
+///loader
+
+
+const loader = document.querySelector("#preloader");
+window.addEventListener("load", function(){
+    loader.style.display = 'none';
+})
 ///slick slider
 $(document).ready(function(){
     $('.testimonials').slick({

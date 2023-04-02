@@ -673,6 +673,10 @@ html {
   z-index: 99999;
 }
 
+.z-\[999\] {
+  z-index: 999;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -1138,6 +1142,10 @@ html {
   font-size: 15px;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .font-thin {
   font-weight: 100;
 }
@@ -1216,6 +1224,11 @@ html {
 .text-\[\#fff\] {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-\[\#ccc\] {
+  --tw-text-opacity: 1;
+  color: rgba(204, 204, 204, var(--tw-text-opacity));
 }
 
 .opacity-70 {
@@ -1489,5 +1502,9 @@ html {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:text-\[24px\] {
+    font-size: 24px;
   }
 }
