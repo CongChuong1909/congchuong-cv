@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class=" bg-[#A4A6A8] h-[100vh]">
+          <div class="background gradient"><ul class="bg-bubbles"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+     <div class="mx-auto lg:max-w-[1268px] lg:h-[100vh] grid grid-cols-12 lg:fixed z-50 lg:inset-0 gap-5 lg:place-content-center md:static sm:static">
+        <div class="col-span-12 h-14 w-full inset-0 fixed lg:h-[50%] z-[99999] lg:col-span-1 shadow-lg lg:w-[90%] bg-[#fff] rounded lg:relative lg:z-50 md:col-span-12 ">
+            <ul class="flex lg:flex-col justify-around lg:justify-between w-full h-full items-center ">
+                <li class="py-2 lg:py-0 sidebar_bb h-full flex flex-col justify-center items-center relative w-[90%] "><a class="text-[11px] pt-[6px] uppercase flex flex-col justify-center items-center h-full" id="aboutlink" href="#about"><i class="text-[20px] font-thin fa-regular fa-user pb-2"></i> <p>About</p></a></li>
+                <li class="py-2 lg:py-0 sidebar_bb h-full flex flex-col justify-center items-center relative w-[90%] "><a class="text-[11px] pt-[6px] uppercase flex flex-col justify-center items-center h-full" id="resumelink" href="#"><i class="text-[20px] font-thin fa-regular fa-rectangle-list pb-2"></i> <p>Resume</p></a></li>
+                <li class="py-2 lg:py-0 sidebar_bb h-full flex flex-col justify-center items-center relative w-[90%] "><a class="text-[11px] pt-[6px] uppercase flex flex-col justify-center items-center h-full" id="projectlink" href="#project"><i class="text-[20px] font-thin fa-regular fa-object-ungroup pb-2"></i> <p>Project</p></a></li>
+                <!-- <li class="py-2 lg:py-0 sidebar_bb h-full flex flex-col justify-center items-center relative w-[90%] "><a class="text-[11px] pt-[6px] uppercase flex flex-col justify-center items-center h-full" id="bloglink" href="#blog"><i class="text-[20px] pb-2 fa-regular fa-comment-dots"></i> <p>Blog</p></a></li> -->
+                <li class="py-2 lg:py-0 sidebar_bb h-full flex flex-col justify-center items-center relative w-[90%] "><a class="text-[11px] pt-[6px] uppercase flex flex-col justify-center items-center h-full" id="contactlink" href="#contact"><i class="text-[20px] font-thin fa-regular fa-envelope pb-2"></i> <p>Contact</p></a></li>
+            </ul>
+        </div>
+        <div class="col-span-12 pt-14 lg:pt-0  lg:col-span-4 h-[80vh] shadow-lg z-10  lg:scale-y-105 lg:scale-x-110 rounded-lg bg-[#fff] relative md:col-span-12 ">
+            <div class="hidden lg:block lg:absolute lg:w-full lg:h-full lg:bg-rgba_background-img lg:right-[16px] lg:top-[-16px] lg:rounded" ></div>
+            <div class="relative w-full h-full bg-[#fff] overflow-hidden rounded">
+               <div class="avatar relative">
+                    <img class="scale-125 z-11" class="rounded-tl rounded-tr " src="https://ryancv-react.netlify.app/images/profile2.jpg" alt="" />
+               </div>
+                <div class="relative z-50 p-14 flex justify-center flex-col"> 
+                    <h1 class="font-poppins text-[24px]">LƯƠNG CÔNG CHƯƠNG</h1>
+                        <div class="flex w-full relative text-left ml-7">
+                            <span class="text first-text block ">I'm a&nbsp;</span>
+                            <span class="text sec-text block">Front-end Developer</span>
+                        </div>
+                        <div class="flex justify-center w-full">
+                            <a class="p-3 block" href="https://www.facebook.com/congchuong.qn.9/"><i class="fa-brands fa-facebook"></i> </a>
+                            <a class="p-3 block" href="https://github.com/CongChuong1909"><i class="fa-brands fa-github"></i> </a>
+                            <a class="p-3 block" href="https://www.instagram.com/congchuong1/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a class="p-3 block" href="https://www.linkedin.com/in/l%C6%B0%C6%A1ng-c%C3%B4ng-ch%C6%B0%C6%A1ng-888a28230/"><i class="fa-brands fa-linkedin"></i> </a>
+                        </div>
+
+                        
+                </div>
+                <div class="flex justify-center items-center bordertop_download relative ">
+                    <a class="p-6" href="./CV/CV LƯƠNG CÔNG CHƯƠNG - Intern front-end .pdf" download>
+                        DOWNLOAD CV <i class="fa-solid fa-cloud-arrow-down pl-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-12 relative content lg:col-span-7 h-[80vh] shadow-lg  lg:overflow-auto scrollbar-thin scrollbar-thumb-gray-500 md:col-span-12 ">
+            <div class="card_inner lg:active lg:animated" id="about">
+                <div class="title relative text-[20px]">
+                    <p class="font-semibold">About Me</p>
+                </div>
+                <div class="tracking-wide text-[16px] text-[#646464] font-poppins p-4 pt-7 pb-11 font-extralight">
+                    <div>
+                        <p><span class="font-semibold">Hello! I'm Lương Công Chương. </span ><span class="text-[14px] leading-6">I'm The Front-end Industry in SaiGon Technology University (STU) Looking for opportunities and challenges in career, oriented to become a Front-End Developer. Always try to complete the assigned tasks excellently, exploiting all your abilities and strengths to the contributions of the department and the company. From there, contributing a part to bring better quality products, departments and companies, more development. Create a premise to have the opportunity to become an official employee of the company.</span> </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 pt-4">
+                        <div><span class="font-semibold">Date of Bird:</span> <span class=" font-normal text-[#144b1c]"> 19th September 2001</span></div>
+                        <div><span class="font-semibold">Age:</span> <span class="font-normal text-[#144b1c]"> 22</span></div>
+                        <div><span class="font-semibold">HomeTown:</span> <span class="font-normal text-[#144b1c]"> Binh Dinh, Viet Nam</span></div>
+                        <div><span class="font-semibold">Phone:</span> <span class="font-normal text-[#144b1c]"> 0334582742</span></div>
+                        <div><span class="font-semibold">Address:</span> <span class="font-normal text-[#144b1c]"> 58/817A Ta Quang Buu,<br> Ward 5, District 8, Ho Chi Minh City</span></div>
+                        <div class="flex"><span class="font-semibold">Gmail:</span> <span class="font-normal text-[#144b1c]"> congchuong321@gmail.com</span></div>
+                        <div><span class="font-semibold">Graduate:</span> <span class="font-normal text-[#144b1c]"> SaiGon Technology University (STU</span>)</div>
+                    </div>
+                </div>
+                <div class="title relative text-[20px]">
+                    <p class="font-semibold">My Skills</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-4 pb-7 ">
+                    <div class="border_skill p-8 flex content-center flex-col items-center"><div class="skill block relative"><div class="w-4 h-4 relative flex content-center items-center"><i class="absolute right-[-4px] text-[32px] text-[#507956] fa-brands fa-html5"></i></div></div><h2 class="text-[18px] p-4 font-semibold">Front-end</h2><p class="leading-7">Modern and mobile-ready website that will help you reach all of your marketing.</p></div>
+                    <div class="border_skill p-8 flex content-center flex-col items-center"><div class="skill block relative"><div class="w-4 h-4 relative flex content-center items-center"><i class="absolute right-[-12px] text-[32px] text-[#507956] fa-solid fa-code"></i></div></div><h2 class="text-[18px] p-4 font-semibold">Back-end</h2><p class="leading-7">Modern and mobile-ready website that will help you reach all of your marketing.</p></div>
+                    <div class="border_skill p-8 flex content-center flex-col items-center"><div class="skill block relative"><div class="w-4 h-4 relative flex content-center items-center"><i class="absolute right-[-10px] text-[32px] text-[#507956] fa-solid fa-wand-magic-sparkles"></i></div></div><h2 class="text-[18px] p-4 font-semibold">Design</h2><p class="leading-7">Modern and mobile-ready website that will help you reach all of your marketing.</p></div>
+                    <div class="border_skill p-8 flex content-center flex-col items-center"><div class="skill block relative"><div class="w-4 h-4 relative flex content-center items-center"><i class="absolute right-[-8px] text-[32px] text-[#507956] fa-solid fa-server"></i></div></div><h2 class="text-[18px] p-4 font-semibold">Other Skill</h2><p class="leading-7">Modern and mobile-ready website that will help you reach all of your marketing.</p></div>
+                </div>
+
+                <div class="title relative text-[20px]">
+                    <p class="font-semibold">Testimonials</p>
+                </div>
+
+                <div class="pb-24 ">
+                    <ul class="testimonials cursor-pointer">
+                        <li>
+                            <div class="p-12 pb-4 text-center relative">
+                                <span>" </span><span>Lorem ipsum dolor sit amet.</span><span> "</span>
+                            </div>
+                            <div class="flex flex-col content-center items-center">
+                                <img class="w-16 h-16 rounded-[30px]" src="https://picsum.photos/200/300" alt="">
+                                <h1>Name</h1>
+                                <p>des</p>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="p-12 pb-4 text-center relative">
+                                <span>" </span><span>Lorem ipsum dolor sit amet.</span><span> "</span>
+                            </div>
+                            <div class="flex flex-col content-center items-center">
+                                <img class="w-16 h-16 rounded-[30px]" src="https://picsum.photos/200/300" alt="">
+                                <h1>Name</h1>
+                                <p>des</p>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="p-12 pb-4 text-center relative">
+                                <span>" </span><span>Lorem ipsum dolor sit amet.</span><span> "</span>
+                            </div>
+                            <div class="flex flex-col content-center items-center">
+                                <img class="w-16 h-16 rounded-[30px]" src="https://picsum.photos/200/300" alt="">
+                                <h1>Name</h1>
+                                <p>des</p>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="p-12 pb-4 text-center relative">
+                                <span>" </span><span>Lorem ipsum dolor sit amet.</span><span> "</span>
+                            </div>
+                            <div class="flex flex-col content-center items-center">
+                                <img class="w-16 h-16 rounded-[30px]" src="https://picsum.photos/200/300" alt="">
+                                <h1>Name</h1>
+                                <p>des</p>
+                            </div>  
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="card_inner lg:hidden lg:animated" id="resume">
+                <div class="title relative text-[20px]">
+                    <p class="font-semibold">Resume</p>
+                </div>
+                <div class="grid grid-cols-1 ">
+                    <div class="grid grid-cols-1 pt-8 gap-2 border_skill">
+                        <div class="flex items-center pb-12 border_bottom">
+                            <i class="text-[32px] text-[#1c5213] pr-2 fa-sharp fa-solid fa-building-columns"></i><h1 class="text-[20px] text-[#1c5213]">EDUCATION</h1>
+                        </div>
+                        <div class="mt-4 border_bottom">
+                            <div >
+                                <span class="text-[#1c5213] font-thin p-1 border border-[#1c5213] rounded-sm ">2019</span>
+                            </div>
+                            <h3 class="font-medium text-[18px] pt-4 ">University</h3>
+                            <p class="text-[14px] text-[#555] pb-4">SaiGon Technology University (STU).</p>
+                            <p class="text-[14px] text-[#666]">Starting to study information technology at Saigon University Technology, it was also the time when I started with website programming, in addition, I was also equipped with knowledge about C#, C++, OOP, Winform, Structure, etc. Data structures, Algorithms...</p>
+                        </div>
+                        <div class="mt-4 border_bottom">
+                            <div >
+                                <span class="text-[#1c5213] font-thin p-1 border border-[#1c5213] rounded-sm ">2020</span>
+                            </div>
+                            <h3 class="font-medium text-[18px] pt-4 ">Programming Course</h3>
+                            <p class="text-[14px] text-[#555] pb-4">Online courses on youtube.</p>
+                            <p class="text-[14px] text-[#666]">Finished the process of learning Html Css Javascript at youtube, w3school, then studied ReactJs and it was also the time when I started working on my first projects.</p>
+                        </div>
+                        <div class="mt-4 border_bottom">
+                            <div >
+                                <span class="text-[#1c5213] font-thin p-1 border border-[#1c5213] rounded-sm ">2021 - 2022</span>
+                            </div>
+                            <h3 class="font-medium text-[18px] pt-4 ">Udemy Course</h3>
+                            <p class="text-[14px] text-[#555] pb-4">Online courses on Udemy by Maximilian Schwarzmüller.</p>
+                            <p class="text-[14px] text-[#666]">Finished the process of learning ReactJS at Udemy, I started doing a few small projects with Reactjs and other Front-end technologies.</p>
+                        </div>
+                        <div class="mt-4 border_bottom">
+                            <div >
+                                <span class="text-[#1c5213] font-thin p-1 border border-[#1c5213] rounded-sm ">2022 - now</span>
+                            </div>
+                            <h3 class="font-medium text-[18px] pt-4 ">Youtube</h3>
+                            <p class="text-[14px] text-[#555] pb-4">Online real project.</p>
+                            <p class="text-[14px] text-[#666]">use the knowledge learned and apply in real projects, continue to learn new technologies and coding skills to improve yourself</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="title relative text-[20px]">
+                    <p class="font-semibold">My Skills</p>
+                </div>
+                    <div class="grid grid-cols-1">
+                        <div>
+                            <div class="border_skill border_bottom">
+                                <i class="text-[24px] skill fa-solid fa-code " style="padding:18px"></i> <span class="text-[20px]">Code Skill</span>
+                            </div>
+                            <div class="grid grid-cols-4 pt-7 lg:grid-cols-5 gap-5 lg:px-24 lg:py-4">
+                                <img class="w-12 opacity-70 h-auto" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="">
+                                <img class="w-12 opacity-70 h-auto" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""> 
+                                <img class="w-12 opacity-70 h-auto" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="">
+                                <img class="w-12 opacity-70 h-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" alt="">
+                                <img class="w-12 opacity-70 h-auto" src="https://cdn-icons-png.flaticon.com/512/875/875209.png" alt="">
+                                <img class="w-12 opacity-70 h-auto" src="https://repository-images.githubusercontent.com/347723622/92065800-865a-11eb-9626-dff3cb7fef55" alt="">
+                                <img class="w-12 opacity-70 h-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" alt="">
+                                <img class="w-12 opacity-70 h-auto" src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="">
+                                <img class="w-12 opacity-70 h-auto" src="https://v4.mui.com/static/logo.png" alt="">
+                                <img class="w-12 opacity-70 h-auto" src="https://media.techmaster.vn/api/fileman/Uploads/users/6551/boostrap-4/icon.png" alt=""> 
+                                <img class="w-12 opacity-70 h-auto" src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="">
+                                <img class="w-12 opacity-70 h-auto" src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" alt=""> 
+                                <img class="w-12 opacity-70 h-auto" src="https://techvccloud.mediacdn.vn/2020/9/17/mysql-1-1600340047538868003500-crop-160034079526453914971.png" alt=""> 
+                                <img class="w-12 opacity-70 h-auto" src="https://www.gstatic.com/devrel-devsite/prod/v879bd73e331fb6980fc7788d2be5a42c1a77b1509d63bf8e1d8e3cc58aa142c0/firebase/images/touchicon-180.png" alt=""> 
+                                <img class="w-12 opacity-70 h-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt=""> 
+                            </div>
+                        </div>
+                       
+                    </div>
+            </div>
+            <div class="card_inner lg:hidden lg:animated" id="project">
+                <div class="title relative text-[20px]">
+                    <p class="font-semibold">Project</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="grid w-full grid-cols-1 p-0 lg:p-4">
+                        <div class="border_skill">
+                            <div class="mb-8 border border-[#ccc]">
+                                <div class="image-container overflow-hidden relative ">
+                                    <img id="pj1" src="./image/bookshopCustomer.png" alt="Your Image" class="animated-image">
+                                    <div class="overlay">
+                                        <div class="overlayx"  name = "Book Shop" img = "./image/bookshopCustomer.png"></div>
+                                        <a href="https://main--charming-halva-9b966f.netlify.app/" class="link" target=”_blank”><i class="fas fa-link" ></i></a>
+                                        <a href="https://github.com/CongChuong1909/book-shop" class="detail" target="_blank"><i class="fa-brands fa-git-alt" ></i></a>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <h3 class="text-[16px] pb-2 font-semibold">Book Shop</h3>
+                                    <p class="text-[13px]">ReactJS, Redux, MaterialUI,<br> React-Boostrap, Firebase...</p>
+                                </div>
+                            </div>
+                            <div class="mb-8 border border-[#ccc]">
+                                <div class="image-container overflow-hidden relative ">
+                                    <img id="pj2" src="./image/bookShopAdmin.png" alt="Your Image" class="animated-image">
+                                    <div class="overlay" name = "Book Shop Admin" img = "./image/bookShopAdmin.png">
+                                         <div class="overlayx" name = "Book Shop Admin" img = "./image/bookShopAdmin.png"></div>
+                                        <a href="https://main--brilliant-crostata-1e2c87.netlify.app/" class="link" target=”_blank”><i class="fas fa-link" ></i></a>
+                                        <a href="https://github.com/CongChuong1909/book-shop" class="detail" target="_blank"><i class="fa-brands fa-git-alt" ></i></a>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <h3 class="text-[16px] pb-2 font-semibold">Book Shop Admin</h3>
+                                    <p class="text-[13px]">NodeJS, ExpressJS, ReactJS, MongoDB,<br> React-Boostrap, MaterialUI...</p>
+                                </div>
+                            </div>
+                            <div class="mb-8 border border-[#ccc]">
+                                <div class="image-container overflow-hidden relative ">
+                                    <img id="pj3" src="./image/shopee.png" alt="Your Image" class="animated-image">
+                                    <div class="overlay" >
+                                         <div class="overlayx" name = "Shopee" img = "./image/shopee.png"></div>
+                                        <a href="https://congchuong1909.github.io/shopee/" class="link" target=”_blank”><i class="fas fa-link" ></i></a>
+                                        <a href="https://github.com/CongChuong1909/shopee" class="detail" target="_blank"><i class="fa-brands fa-git-alt" ></i></a>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <h3 class="text-[16px] pb-2 font-semibold">Shopee Clone</h3>
+                                    <p class="text-[13px]">Html, Css, Javascript...</p>
+                                </div>
+                            </div>
+                            <div class="mb-8 border border-[#ccc]">
+                                <div class="image-container overflow-hidden relative ">
+                                    <img id="pj4" src="./image/musicApp.png" alt="Your Image" class="animated-image">
+                                    <div class="overlay" >
+                                         <div class="overlayx" name = "Music App" img = "./image/musicApp.png"></div>
+                                        <a href="https://congchuong1909.github.io/musicApp/" class="link" target=”_blank”><i class="fas fa-link" ></i></a>
+                                        <a href="https://github.com/CongChuong1909/musicApp" class="detail" target="_blank"><i class="fa-brands fa-git-alt" ></i></a>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <h3 class="text-[16px] pb-2 font-semibold">Music App</h3>
+                                    <p class="text-[13px]">Html, Css, Javascript</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="grid w-full grid-cols-1 p-0 lg:p-4">
+                       <div class="border_skill">
+                        <div class="mb-8 border border-[#ccc]">
+                            <div class="image-container overflow-hidden relative ">
+                                <img id="pj5" src="./image/fitcoach.png" alt="Your Image" class="animated-image">
+                                <div class="overlay" >
+                                     <div class="overlayx" name = "Fit Coach" img = "./image/fitcoach.png"></div>
+                                    <a href="https://congchuong1909.github.io/fit-coach/" class="link" target=”_blank”><i class="fas fa-link" ></i></a>
+                                    <a href="https://github.com/CongChuong1909/fit-coach" class="detail" target="_blank"><i class="fa-brands fa-git-alt" ></i></a>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-[16px] pb-2 font-semibold">Fit Coach</h3>
+                                <p class="text-[13px]">ReactJS, MaterialUI,<br> React-Boostrap...</p>
+                            </div>
+                        </div>
+                        <div class="mb-8 border border-[#ccc]">
+                            <div class="image-container overflow-hidden relative ">
+                                <img id="pj6" src="./image/cartMeal.png" alt="Your Image" class="animated-image">
+                                <div class="overlay" >
+                                     <div class="overlayx" name = "Cart Meal" img = "./image/cartMeal.png"></div>
+                                    <a href="https://congchuong1909.github.io/Booking-meal-React/" class="link" target=”_blank”><i class="fas fa-link" ></i></a>
+                                    <a href="https://github.com/CongChuong1909/Booking-meal-React" class="detail" target="_blank"><i class="fa-brands fa-git-alt" ></i></a>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-[16px] pb-2 font-semibold">Cart Meal</h3>
+                                <p class="text-[13px]">ReactJS, Redux, MaterialUI,<br> React-Boostrap, Firebase...</p>
+                            </div>
+                        </div>
+                        <div class="mb-8 border border-[#ccc]">
+                            <div class="image-container overflow-hidden relative ">
+                                <img id="pj7" src="./image/form.png" alt="Your Image" class="animated-image">
+                                <div class="overlay" >
+                                     <div class="overlayx" name = "Form Validation" img = "./image/form.png"></div>
+                                    <a href="https://congchuong1909.github.io/Form-validation/" class="link" target=”_blank”><i class="fas fa-link" ></i></a>
+                                    <a href="https://github.com/CongChuong1909/Form-validation" class="detail" target="_blank"><i class="fa-brands fa-git-alt" ></i></a>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-[16px] pb-2 font-semibold">Form Validation</h3>
+                                <p class="text-[13px]">Html, Css, Javascript</p>
+                            </div>
+                        </div>
+                        <div class="mb-8 border border-[#ccc]">
+                            <div class="image-container overflow-hidden relative ">
+                                <img id="pj8" src="./image/orderFood.png" alt="Your Image" class="animated-image">
+                                <div class="overlay" >
+                                     <div class="overlayx" name = "Order Food" img = "./image/orderFood.png"></div>
+                                    <a href="https://congchuong1909.github.io/order-food/" class="link" target=”_blank”><i class="fas fa-link" ></i></a>
+                                    <a href="https://github.com/CongChuong1909/order-food" class="detail" target="_blank"><i class="fa-brands fa-git-alt" ></i></a>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-[16px] pb-2 font-semibold">Order Food</h3>
+                                <p class="text-[13px]">ReactJS, Redux, MaterialUI,<br> React-Boostrap</p>
+                            </div>
+                        </div>  
+                       </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card_inner lg:active lg:animated" id="contact">
+                <div class="title relative text-[20px]">
+                    <p class="font-semibold">Contact Me</p>
+                </div>  
+                <div class="w-[100%] h-[40vh]">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.7398693218936!2d106.66810324080801!3d10.734739206837736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f7575faa583%3A0x9de1f68ffbbb60e5!2sCafe%20In%20Time!5e0!3m2!1svi!2s!4v1680367748409!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+                 <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-2 pt-8 pb-16">
+                    <div class="text-[15px] text-[#444] font-medium">ADDRESS: <span class="font-light text-[#666]">58/817A Ta Quang Buu, Ward 5, Distrist 8, HoChiMinh city</span></div>
+                    <div class="text-[15px] text-[#444] font-medium">EMAIL: <span class="font-light text-[#666]">congchuong321@gmail.com</span></div>
+                    <div class="text-[15px] text-[#444] font-medium">PHONE: <span class="font-light text-[#666]">0334582742</span></div>
+                 </div>
+                 <div class="title relative text-[20px]">
+                    <p class="font-semibold">Contact Form</p>
+                </div>  
+                <div class=" mt-8">
+                    <form class="grid grid-cols-2 gap-8" action="https://formsubmit.co/congchuong199@gmail.com" method="POST">
+                        <div>
+                            <input class="p-4 border-b-2 border-[#ccc] outline-none w-full" type="text" name="Name" placeholder="Full Name" id="">
+                        </div>
+                        <div>
+                            <input class="p-4 border-b-2 border-[#ccc] outline-none w-full" type="text" name="Address" placeholder="Email Address" id="">
+                        </div>
+                        <div class="col-span-2">
+                            <textarea class="w-full p-4 border-b-2 border-[#ccc] outline-none" placeholder="Your Message" name="" id="" cols="30" rows="3"></textarea>
+                        </div>
+    
+                        <div><input class="send-contact p-4 cursor-pointer bg-[#507956] text-[#fff]" type="submit" value="SEND MESSAGE"></div>
+                    </form>
+                </div>
+
+        </div>
+    </div>
+   </div>
+   <div>
+    <div class="popup_project">
+        <div class="layout_project"></div>
+        <div class="close-btn flex justify-center items-center p-4">x</div>
+        <div class="top-bar">
+            <p class="image-name">BookShop</p>
+        </div>
+        <img src="./image/bookshopCustomer.png" class="large-image" alt="">
+        <h1 class="index">01</h1>
+    </div>
+</div>
+   <script
+     type="text/javascript"
+     src="https://code.jquery.com/jquery-1.11.0.min.js"
+   ></script>
+   <script
+     type="text/javascript"
+     src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+   ></script>
+   <script
+     type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+   ></script>
+   <script src="./index.js"></script>
+</body>
+
+</html>
